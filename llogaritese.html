@@ -1,0 +1,52 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"> 
+<html> 
+<head> 
+<title>Shuma</title> 
+<script language="JavaScript"> 
+function Shuma() 
+{ 
+document.frm1.s1.value=parseInt(document.frm1.nr1.value)+parseInt(document.frm1.nr2.value);
+ } 
+function Diferenca()
+ {
+document.frm1.s1.value=parseInt(document.frm1.nr1.value)-parseInt(document.frm1.nr2.value); 
+} 
+function Prodhimi() 
+{ 
+document.frm1.s1.value=parseInt(document.frm1.nr1.value)*parseInt(document.frm1.nr2.value); 
+} 
+function Heresi() 
+{ document.frm1.s1.value=parseInt(document.frm1.nr1.value)/parseInt(document.frm1.nr2.value);
+ } 
+</script>
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+</head>
+ <body> 
+<table width="400" border="0"> 
+<tr> 
+<td>Numri1</td> 
+<td>Numri2</td> 
+<td>Veprimi</td> 
+<td>Vlera</td> 
+</tr> 
+<form name="frm1"> 
+<tr> 
+<td>
+<input type="text" name="nr1" value="0" >
+</td> 
+<td>
+<input type="text" name="nr2" value="0" >
+</td> 
+<td><input type="button" value="shuma" onClick="javascript:Shuma();">
+<br> <input type="button" value="diferenca" onClick="javascript:Diferenca();">
+<br> <input type="button" value="prodhimi" onClick="javascript:Prodhimi();">
+<br>
+ <input type="button" value="heresi" onClick="javascript:Heresi();">
+<br> 
+</td>
+<td><input type="text" name="s1"></td>
+</tr> 
+</form> 
+</table>
+ </body> 
+</html>
